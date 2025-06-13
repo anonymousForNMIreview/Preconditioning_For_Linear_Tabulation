@@ -18,9 +18,9 @@ device_id = "cuda:0" if use_cuda else "cpu"
 
 torch.set_default_dtype(torch.float64)
 
-N = 30 # number of neurons in the hidden layers
-IP_ISAT = 0 # whether to perform IP-ISAT training
-SEP_ISAT = 1 # whether to perform SEP-ISAT training
+N = 10 # number of neurons in the hidden layers
+IP_ISAT = 1 # whether to perform IP-ISAT training
+SEP_ISAT = 0 # whether to perform SEP-ISAT training
 
 class Net(nn.Module):  # define the network, 6 MLP layers with N neurons each
     def __init__(self):
@@ -193,7 +193,7 @@ def main():
                         help='input batch size for training (default: 64)')
     parser.add_argument('--test-batch-size', type=int, default=500, metavar='N',
                         help='input batch size for testing (default: 1000)')
-    parser.add_argument('--epochs', type=int, default=6000, metavar='N', #6000
+    parser.add_argument('--epochs', type=int, default=15000, metavar='N', #6000
                         help='number of epochs to train (default: 14)')
     parser.add_argument('--lr', type=float, default=0.004, metavar='LR',
                         help='learning rate (default: 1.0)')

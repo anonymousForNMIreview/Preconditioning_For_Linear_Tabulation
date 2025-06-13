@@ -18,7 +18,7 @@ device_id = "cuda:0" if use_cuda else "cpu"
 
 torch.set_default_dtype(torch.float64)
 
-N = 30 # number of neurons in the hidden layers
+N = 10 # number of neurons in the hidden layers
 IP_ISAT = 0 # whether to perform IP-ISAT training
 SEP_ISAT = 1 # whether to perform SEP-ISAT training
 
