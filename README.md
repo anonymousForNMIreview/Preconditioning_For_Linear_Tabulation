@@ -56,9 +56,6 @@ USING THE CODE
    - Compile the code and run "PaSR.exe" (performance statistics are output at the end of the code's execution)
    
    
-Any inquiries regarding this code can be addressed to Pavel Popov at ppopov@sdsu.edu
-   
-   
    
    
    
